@@ -1,4 +1,4 @@
-package controllable
+package robot
 
 import io.hannes.controllable.Bounds
 import io.hannes.controllable.Position

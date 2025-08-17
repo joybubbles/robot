@@ -11,10 +11,13 @@ class Robot(val position: Position, var directionKey: Char, val bounds: Bounds) 
     var currentDirectionId = 0
 
     init {
-        // TODO PRINT INITIAL INFO? OR WHEN YOU WRITE IT IN PROMPT?
         val initialDirectionId = directions.indexOfFirst { it.key == directionKey }
         check(initialDirectionId >= 0) {
             "invalid initial direction"
+        }
+
+        check(bounds.inside(position.x, position.y)) {
+            "invalid movement, robot position out of bounds"
         }
 
         currentDirectionId = initialDirectionId
@@ -36,8 +39,6 @@ class Robot(val position: Position, var directionKey: Char, val bounds: Bounds) 
             'R' -> rotate(1)
             else -> error("command not implemented")
         }
-
-        // Fix report keyword in robot
     }
 
     fun rotate(steps: Int) {

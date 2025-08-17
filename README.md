@@ -8,6 +8,8 @@
 ## How to test
 * Run all JUnit 5 tests by selecting `Run All Tests` in Intellij IDEA (installation described above)
 
+## FAQ
+* What directions do the robot support? Currently: N, E, S, W ie. north, east, south, west
 ### Note
 There is a multitude of ways to run the application & run the tests, using mvn clean test for example but to save some time i'm leaving those out
 
