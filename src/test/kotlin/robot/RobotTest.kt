@@ -14,7 +14,7 @@ class RobotTest {
         val robot = Robot(
             Position(4, 7),
             'N',
-            Bounds(10, 10), // Outside of class?
+            Bounds(10, 10),
         )
 
         // When
@@ -31,7 +31,7 @@ class RobotTest {
         val robot = Robot(
             Position(4, 7),
             'N',
-            Bounds(10, 10), // Outside of class?
+            Bounds(10, 10),
         )
 
         // When
@@ -47,7 +47,7 @@ class RobotTest {
         val robot = Robot(
             Position(4, 7),
             'N',
-            Bounds(10, 10), // Outside of class?
+            Bounds(10, 10),
         )
         // When
         robot.processInstruction('R')
@@ -63,7 +63,7 @@ class RobotTest {
         val robot = Robot(
             Position(1, 2),
             'N',
-            Bounds(5, 5), // Outside of class?
+            Bounds(5, 5),
         )
         // When
         robot.processInstructions("RFRFFRFRF")
@@ -80,7 +80,7 @@ class RobotTest {
         val robot = Robot(
             Position(1, 2),
             'N',
-            Bounds(5, 5), // Outside of class?
+            Bounds(5, 5),
         )
 
         // When / Then
@@ -95,7 +95,7 @@ class RobotTest {
         val robot = Robot(
             Position(1, 2),
             'N',
-            Bounds(5, 5), // Outside of class?
+            Bounds(5, 5),
         )
 
         // When / Then
